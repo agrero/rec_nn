@@ -1,4 +1,3 @@
-from re import T
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -16,12 +15,12 @@ std = np.std(M)
 M /= std
 
 # Update parameters
-dt = 0.1
+dt = 0.01
 leakage = 0.01  # Leakage factor
 threshold = 1
 
 # weights 
-w = np.random.uniform(-1, 1, size = (n,n))
+w = np.random.uniform(0, 1, size = (n,n))
 
 # gen plot
 fig, ax = plt.subplots()
